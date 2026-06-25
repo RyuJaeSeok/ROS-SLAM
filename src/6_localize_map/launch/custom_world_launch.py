@@ -21,8 +21,11 @@ def generate_launch_description():
     nav2_bringup_share = get_package_share_directory('nav2_bringup')
 
     launch_file_dir = os.path.join(turtlebot3_share, 'launch')
-    world = os.path.join(package_share, 'worlds', 'custom_world.world')
-    map_yaml = os.path.join(package_share, 'map', 'custom_world.yaml')
+    # world = os.path.join(package_share, 'worlds', 'custom_world.world')
+    # map_yaml = os.path.join(package_share, 'map', 'custom_world.yaml')
+    world = os.path.join(package_share, 'worlds', 'narrow_world_w_obstacles.world')
+    map_yaml = os.path.join(package_share, 'map', 'narrow_map.yaml')
+
     burger_model = os.path.join(package_share, 'models', 'turtlebot3_burger', 'model.sdf')
     ekf_config = os.path.join(package_share, 'config', 'ekf.yaml')
     nav2_params = os.path.join(package_share, 'config', 'nav2_params.yaml')

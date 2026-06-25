@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <world name="dqn">
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"></plugin>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"></plugin>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"></plugin>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors"><render_engine>ogre2</render_engine></plugin>
+
+    <physics type="ode">
+      <real_time_update_rate>1000.0</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <ode>
+        <solver><type>quick</type><iters>150</iters><sor>1.4</sor></solver>
+        <constraints><cfm>0.00001</cfm><erp>0.2</erp></constraints>
+      </ode>
+    </physics>
+
+    <include><uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Ground Plane</uri></include>
+    <light type="directional" name="sun">
+      <cast_shadows>false</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+      <model name="wall_c_n1"><static>true</static><pose>1.25 0.8125 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 0.875 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 0.875 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_c_n2"><static>true</static><pose>1.25 -0.8125 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 0.875 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 0.875 0.5</size></box></geometry></visual></link></model>
+      
+      <model name="wall_c_s1"><static>true</static><pose>-1.25 0.875 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 0.75 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 0.75 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_c_s2"><static>true</static><pose>-1.25 -0.875 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 0.75 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 0.75 0.5</size></box></geometry></visual></link></model>
+      
+      <model name="wall_c_w1"><static>true</static><pose>1.0 1.25 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.5 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.5 0.2 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_c_w2"><static>true</static><pose>-1.0 1.25 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.5 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.5 0.2 0.5</size></box></geometry></visual></link></model>
+      
+      <model name="wall_c_e1"><static>true</static><pose>0.9375 -1.25 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.625 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.625 0.2 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_c_e2"><static>true</static><pose>-0.9375 -1.25 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.625 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.625 0.2 0.5</size></box></geometry></visual></link></model>
+
+      <model name="wall_n_1"><static>true</static><pose>6.9047 2.6 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_n_2"><static>true</static><pose>6.9047 -2.6 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_n_3"><static>true</static><pose>8.4047 0 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 5.4 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 5.4 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_n_4"><static>true</static><pose>4.8273 1.4875 0.25 0 0 -0.5236</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 2.4495 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 2.4495 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_n_5"><static>true</static><pose>4.8273 -1.4875 0.25 0 0 0.5236</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 2.4495 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 2.4495 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_n_6"><static>true</static><pose>2.75 0.475 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_n_7"><static>true</static><pose>2.75 -0.475 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></visual></link></model>
+
+      <model name="wall_s_1"><static>true</static><pose>-6.9047 2.6 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_s_2"><static>true</static><pose>-6.9047 -2.6 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_s_3"><static>true</static><pose>-8.5047 0 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 5.4 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 5.4 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_s_4"><static>true</static><pose>-4.8274 1.6 0.25 0 0 0.5236</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 2.3094 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 2.3094 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_s_5"><static>true</static><pose>-4.8274 -1.6 0.25 0 0 -0.5236</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 2.3094 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 2.3094 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_s_6"><static>true</static><pose>-2.75 0.6 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_s_7"><static>true</static><pose>-2.75 -0.6 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>3.0 0.2 0.5</size></box></geometry></visual></link></model>
+
+      <model name="wall_w_1"><static>true</static><pose>2.6 6.9047 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_w_2"><static>true</static><pose>-2.6 6.9047 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_w_3"><static>true</static><pose>0 8.4047 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>5.4 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>5.4 0.2 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_w_4"><static>true</static><pose>1.6 4.8273 0.25 0 0 0.5236</pose><link name="link"><collision name="collision"><geometry><box><size>2.1651 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>2.1651 0.2 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_w_5"><static>true</static><pose>-1.6 4.8273 0.25 0 0 -0.5236</pose><link name="link"><collision name="collision"><geometry><box><size>2.1651 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>2.1651 0.2 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_w_6"><static>true</static><pose>0.85 2.75 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_w_7"><static>true</static><pose>-0.85 2.75 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></visual></link></model>
+
+      <model name="wall_e_1"><static>true</static><pose>2.6 -6.9047 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_e_2"><static>true</static><pose>-2.6 -6.9047 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_e_3"><static>true</static><pose>0 -8.3722 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>5.4 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>5.4 0.2 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_e_4"><static>true</static><pose>1.625 -4.7947 0.25 0 0 -0.5236</pose><link name="link"><collision name="collision"><geometry><box><size>2.1651 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>2.1651 0.2 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_e_5"><static>true</static><pose>-1.625 -4.7947 0.25 0 0 0.5236</pose><link name="link"><collision name="collision"><geometry><box><size>2.1651 0.2 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>2.1651 0.2 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_e_6"><static>true</static><pose>0.725 -2.75 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></visual></link></model>
+      <model name="wall_e_7"><static>true</static><pose>-0.725 -2.75 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.2 3.0 0.5</size></box></geometry></visual></link></model>
+
+      <model name="obs_w"><static>true</static><pose>0 4.1 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><cylinder><radius>0.15</radius><length>0.5</length></cylinder></geometry></collision><visual name="visual"><geometry><cylinder><radius>0.15</radius><length>0.5</length></cylinder></geometry></visual></link></model>
+      <model name="obs_e_1"><static>true</static><pose>0.55 -1.5 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><cylinder><radius>0.28</radius><length>0.5</length></cylinder></geometry></collision><visual name="visual"><geometry><cylinder><radius>0.28</radius><length>0.5</length></cylinder></geometry></visual></link></model>
+      <model name="obs_e_2"><static>true</static><pose>-0.55 -2.3 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><cylinder><radius>0.28</radius><length>0.5</length></cylinder></geometry></collision><visual name="visual"><geometry><cylinder><radius>0.28</radius><length>0.5</length></cylinder></geometry></visual></link></model>
+      <model name="obs_e_3"><static>true</static><pose>0.55 -3.1 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><cylinder><radius>0.28</radius><length>0.5</length></cylinder></geometry></collision><visual name="visual"><geometry><cylinder><radius>0.28</radius><length>0.5</length></cylinder></geometry></visual></link></model>
+      <model name="obs_e_4"><static>true</static><pose>-0.55 -3.9 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><cylinder><radius>0.28</radius><length>0.5</length></cylinder></geometry></collision><visual name="visual"><geometry><cylinder><radius>0.28</radius><length>0.5</length></cylinder></geometry></visual></link></model>
+      <model name="obs_n_1"><static>true</static><pose>2.8 0.33 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.35 0.35 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.35 0.35 0.5</size></box></geometry></visual></link></model>
+      <model name="obs_n_2"><static>true</static><pose>2.8 -0.33 0.25 0 0 0</pose><link name="link"><collision name="collision"><geometry><box><size>0.35 0.35 0.5</size></box></geometry></collision><visual name="visual"><geometry><box><size>0.35 0.35 0.5</size></box></geometry></visual></link></model>
+  </world>
+</sdf>
