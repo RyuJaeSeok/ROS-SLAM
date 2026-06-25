@@ -1,0 +1,38 @@
+[1.438s] Invoking command in '/home/user08/colcon_ws/src/1_pub_sub': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user08/colcon_ws/build/1_pub_sub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/1_pub_sub build --build-base /home/user08/colcon_ws/build/1_pub_sub/build install --record /home/user08/colcon_ws/build/1_pub_sub/install.log --single-version-externally-managed install_data
+[1.706s] running egg_info
+[1.706s] creating ../../build/1_pub_sub/1_pub_sub.egg-info
+[1.729s] writing ../../build/1_pub_sub/1_pub_sub.egg-info/PKG-INFO
+[1.729s] writing dependency_links to ../../build/1_pub_sub/1_pub_sub.egg-info/dependency_links.txt
+[1.730s] writing requirements to ../../build/1_pub_sub/1_pub_sub.egg-info/requires.txt
+[1.730s] writing top-level names to ../../build/1_pub_sub/1_pub_sub.egg-info/top_level.txt
+[1.730s] writing manifest file '../../build/1_pub_sub/1_pub_sub.egg-info/SOURCES.txt'
+[1.774s] reading manifest file '../../build/1_pub_sub/1_pub_sub.egg-info/SOURCES.txt'
+[1.775s] writing manifest file '../../build/1_pub_sub/1_pub_sub.egg-info/SOURCES.txt'
+[1.775s] running build
+[1.775s] running build_py
+[1.775s] creating /home/user08/colcon_ws/build/1_pub_sub/build
+[1.776s] creating /home/user08/colcon_ws/build/1_pub_sub/build/lib
+[1.776s] creating /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub
+[1.776s] copying 1_pub_sub/publisher.py -> /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub
+[1.776s] copying 1_pub_sub/subscriber.py -> /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub
+[1.776s] copying 1_pub_sub/__init__.py -> /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub
+[1.776s] copying 1_pub_sub/processor.py -> /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub
+[1.776s] running install
+[1.782s] running install_lib
+[1.803s] creating /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub
+[1.803s] copying /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub/publisher.py -> /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub
+[1.804s] copying /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub/subscriber.py -> /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub
+[1.804s] copying /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub/__init__.py -> /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub
+[1.804s] copying /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub/processor.py -> /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub
+[1.804s] byte-compiling /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub/publisher.py to publisher.cpython-312.pyc
+[1.804s] byte-compiling /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub/subscriber.py to subscriber.cpython-312.pyc
+[1.805s] byte-compiling /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub/__init__.py to __init__.cpython-312.pyc
+[1.805s] byte-compiling /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub/processor.py to processor.cpython-312.pyc
+[1.805s] running install_data
+[1.805s] creating /home/user08/colcon_ws/install/1_pub_sub/share/ament_index
+[1.806s] creating /home/user08/colcon_ws/install/1_pub_sub/share/ament_index/resource_index
+[1.806s] creating /home/user08/colcon_ws/install/1_pub_sub/share/ament_index/resource_index/packages
+[1.806s] copying resource/1_pub_sub -> /home/user08/colcon_ws/install/1_pub_sub/share/ament_index/resource_index/packages
+[1.806s] copying package.xml -> /home/user08/colcon_ws/install/1_pub_sub/share/1_pub_sub
+[1.806s] error: can't copy 'launch/pub_sub_launch.py': doesn't exist or not a regular file
+[1.829s] Invoked command in '/home/user08/colcon_ws/src/1_pub_sub' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user08/colcon_ws/build/1_pub_sub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/1_pub_sub build --build-base /home/user08/colcon_ws/build/1_pub_sub/build install --record /home/user08/colcon_ws/build/1_pub_sub/install.log --single-version-externally-managed install_data

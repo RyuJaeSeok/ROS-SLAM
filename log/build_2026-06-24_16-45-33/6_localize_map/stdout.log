@@ -1,0 +1,25 @@
+running egg_info
+writing ../../build/6_localize_map/6_localize_map.egg-info/PKG-INFO
+writing dependency_links to ../../build/6_localize_map/6_localize_map.egg-info/dependency_links.txt
+writing entry points to ../../build/6_localize_map/6_localize_map.egg-info/entry_points.txt
+writing requirements to ../../build/6_localize_map/6_localize_map.egg-info/requires.txt
+writing top-level names to ../../build/6_localize_map/6_localize_map.egg-info/top_level.txt
+reading manifest file '../../build/6_localize_map/6_localize_map.egg-info/SOURCES.txt'
+writing manifest file '../../build/6_localize_map/6_localize_map.egg-info/SOURCES.txt'
+running build
+running build_py
+copying 6_localize_map/random_moition.py -> /home/user08/colcon_ws/build/6_localize_map/build/lib/6_localize_map
+running install
+running install_lib
+copying /home/user08/colcon_ws/build/6_localize_map/build/lib/6_localize_map/random_moition.py -> /home/user08/colcon_ws/install/6_localize_map/lib/python3.12/site-packages/6_localize_map
+byte-compiling /home/user08/colcon_ws/install/6_localize_map/lib/python3.12/site-packages/6_localize_map/random_moition.py to random_moition.cpython-312.pyc
+running install_data
+creating /home/user08/colcon_ws/install/6_localize_map/share/6_localize_map/launch
+copying launch/localize_map_launch.py -> /home/user08/colcon_ws/install/6_localize_map/share/6_localize_map/launch
+running install_egg_info
+removing '/home/user08/colcon_ws/install/6_localize_map/lib/python3.12/site-packages/6_localize_map-0.0.0-py3.12.egg-info' (and everything under it)
+Copying ../../build/6_localize_map/6_localize_map.egg-info to /home/user08/colcon_ws/install/6_localize_map/lib/python3.12/site-packages/6_localize_map-0.0.0-py3.12.egg-info
+running install_scripts
+Installing random_moition script to /home/user08/colcon_ws/install/6_localize_map/lib/6_localize_map
+Installing simple_yaw_oa script to /home/user08/colcon_ws/install/6_localize_map/lib/6_localize_map
+writing list of installed files to '/home/user08/colcon_ws/build/6_localize_map/install.log'

@@ -1,0 +1,22 @@
+[1.473s] Invoking command in '/home/user15/colcon_ws/src/6_localize_map': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user15/colcon_ws/build/6_localize_map/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user15/colcon_ws/install/6_localize_map/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/6_localize_map build --build-base /home/user15/colcon_ws/build/6_localize_map/build install --record /home/user15/colcon_ws/build/6_localize_map/install.log --install-scripts $base/lib/6_localize_map --single-version-externally-managed install_data
+[1.737s] running egg_info
+[1.757s] writing ../../build/6_localize_map/6_localize_map.egg-info/PKG-INFO
+[1.758s] writing dependency_links to ../../build/6_localize_map/6_localize_map.egg-info/dependency_links.txt
+[1.758s] writing entry points to ../../build/6_localize_map/6_localize_map.egg-info/entry_points.txt
+[1.758s] writing requirements to ../../build/6_localize_map/6_localize_map.egg-info/requires.txt
+[1.758s] writing top-level names to ../../build/6_localize_map/6_localize_map.egg-info/top_level.txt
+[1.800s] reading manifest file '../../build/6_localize_map/6_localize_map.egg-info/SOURCES.txt'
+[1.801s] writing manifest file '../../build/6_localize_map/6_localize_map.egg-info/SOURCES.txt'
+[1.802s] running build
+[1.802s] running build_py
+[1.802s] running install
+[1.808s] running install_lib
+[1.830s] running install_data
+[1.830s] running install_egg_info
+[1.852s] removing '/home/user15/colcon_ws/install/6_localize_map/lib/python3.12/site-packages/6_localize_map-0.0.0-py3.12.egg-info' (and everything under it)
+[1.852s] Copying ../../build/6_localize_map/6_localize_map.egg-info to /home/user15/colcon_ws/install/6_localize_map/lib/python3.12/site-packages/6_localize_map-0.0.0-py3.12.egg-info
+[1.853s] running install_scripts
+[1.984s] Installing random_moition script to /home/user15/colcon_ws/install/6_localize_map/lib/6_localize_map
+[1.984s] Installing simple_yaw_oa script to /home/user15/colcon_ws/install/6_localize_map/lib/6_localize_map
+[1.985s] writing list of installed files to '/home/user15/colcon_ws/build/6_localize_map/install.log'
+[2.054s] Invoked command in '/home/user15/colcon_ws/src/6_localize_map' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user15/colcon_ws/build/6_localize_map/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user15/colcon_ws/install/6_localize_map/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/6_localize_map build --build-base /home/user15/colcon_ws/build/6_localize_map/build install --record /home/user15/colcon_ws/build/6_localize_map/install.log --install-scripts $base/lib/6_localize_map --single-version-externally-managed install_data

@@ -1,0 +1,45 @@
+[0.000000] (-) TimerEvent: {}
+[0.000127] (-) JobUnselected: {'identifier': '1_pub_sub'}
+[0.000165] (-) JobUnselected: {'identifier': '4_avoild_obstacle'}
+[0.000192] (-) JobUnselected: {'identifier': '5_tf_static'}
+[0.000382] (6_localize_map) JobQueued: {'identifier': '6_localize_map', 'dependencies': OrderedDict()}
+[0.000409] (6_localize_map) JobStarted: {'identifier': '6_localize_map'}
+[0.099615] (-) TimerEvent: {}
+[0.199820] (-) TimerEvent: {}
+[0.299986] (-) TimerEvent: {}
+[0.400123] (-) TimerEvent: {}
+[0.500329] (-) TimerEvent: {}
+[0.578855] (6_localize_map) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/6_localize_map', 'build', '--build-base', '/home/user15/colcon_ws/build/6_localize_map/build', 'install', '--record', '/home/user15/colcon_ws/build/6_localize_map/install.log', '--install-scripts', '$base/lib/6_localize_map', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/user15/colcon_ws/src/6_localize_map', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/user15', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CODEX_CI': '1', 'USER': 'user15', 'LC_TIME': 'ko_KR.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","locale":"en-us","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'DEBUG': 'release', 'SHLVL': '0', 'HOME': '/home/user15', 'CHROME_DESKTOP': 'code.desktop', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-e5e32837-1.12-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PAGER': 'cat', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '2140', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '2451', 'IM_CONFIG_CHECK_ENV': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '5013', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'APPLICATION_INSIGHTS_NO_STATSBEAT': 'true', 'LOGNAME': 'user15', 'JOURNAL_STREAM': '9:25701', '_': '/usr/bin/colcon', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'user15', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'PATH': '/home/user15/.codex/tmp/arg0/codex-arg02NcEpL:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/user15/.vscode/extensions/openai.chatgpt-26.616.81150-linux-x64/bin/linux-x86_64', 'SESSION_MANAGER': 'local/user15-HP-ZBook-17-G6:@/tmp/.ICE-unix/2390,unix/user15-HP-ZBook-17-G6:/tmp/.ICE-unix/2390', 'INVOCATION_ID': 'a95935cb1dbe4182925d581a8c4f0c29', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'DISPLAY': ':0', 'CODEX_SANDBOX_NETWORK_DISABLED': '1', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.76WFR3', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '019efd17-e1be-7a72-a537-527f9527786c', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/user15/colcon_ws/build/6_localize_map', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/user15/.config/Code/CachedData/7e7950df89d055b5a378379db9ee14290772148a', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VSCODE_PID': '5013', 'PYTHONPATH': '/home/user15/colcon_ws/build/6_localize_map/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user15/colcon_ws/install/6_localize_map/lib/python3.12/site-packages:'}, 'shell': False}
+[0.600413] (-) TimerEvent: {}
+[0.700580] (-) TimerEvent: {}
+[0.768643] (6_localize_map) StdoutLine: {'line': b'running egg_info\n'}
+[0.780351] (6_localize_map) StdoutLine: {'line': b'writing ../../build/6_localize_map/6_localize_map.egg-info/PKG-INFO\n'}
+[0.780568] (6_localize_map) StdoutLine: {'line': b'writing dependency_links to ../../build/6_localize_map/6_localize_map.egg-info/dependency_links.txt\n'}
+[0.780758] (6_localize_map) StdoutLine: {'line': b'writing entry points to ../../build/6_localize_map/6_localize_map.egg-info/entry_points.txt\n'}
+[0.780916] (6_localize_map) StdoutLine: {'line': b'writing requirements to ../../build/6_localize_map/6_localize_map.egg-info/requires.txt\n'}
+[0.780991] (6_localize_map) StdoutLine: {'line': b'writing top-level names to ../../build/6_localize_map/6_localize_map.egg-info/top_level.txt\n'}
+[0.800699] (-) TimerEvent: {}
+[0.803537] (6_localize_map) StdoutLine: {'line': b"reading manifest file '../../build/6_localize_map/6_localize_map.egg-info/SOURCES.txt'\n"}
+[0.804178] (6_localize_map) StdoutLine: {'line': b"writing manifest file '../../build/6_localize_map/6_localize_map.egg-info/SOURCES.txt'\n"}
+[0.804367] (6_localize_map) StdoutLine: {'line': b'running build\n'}
+[0.804453] (6_localize_map) StdoutLine: {'line': b'running build_py\n'}
+[0.804583] (6_localize_map) StdoutLine: {'line': b'running install\n'}
+[0.810593] (6_localize_map) StdoutLine: {'line': b'running install_lib\n'}
+[0.822379] (6_localize_map) StdoutLine: {'line': b'running install_data\n'}
+[0.822727] (6_localize_map) StdoutLine: {'line': b'copying launch/custom_world_launch.py -> /home/user15/colcon_ws/install/6_localize_map/share/6_localize_map/launch\n'}
+[0.822852] (6_localize_map) StdoutLine: {'line': b'creating /home/user15/colcon_ws/install/6_localize_map/share/6_localize_map/worlds\n'}
+[0.823096] (6_localize_map) StdoutLine: {'line': b'copying worlds/custom_world.world -> /home/user15/colcon_ws/install/6_localize_map/share/6_localize_map/worlds\n'}
+[0.823223] (6_localize_map) StdoutLine: {'line': b'creating /home/user15/colcon_ws/install/6_localize_map/share/6_localize_map/map\n'}
+[0.823328] (6_localize_map) StdoutLine: {'line': b'copying map/custom_world.yaml -> /home/user15/colcon_ws/install/6_localize_map/share/6_localize_map/map\n'}
+[0.823432] (6_localize_map) StdoutLine: {'line': b'copying map/custom_world.pgm -> /home/user15/colcon_ws/install/6_localize_map/share/6_localize_map/map\n'}
+[0.823535] (6_localize_map) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.835561] (6_localize_map) StdoutLine: {'line': b"removing '/home/user15/colcon_ws/install/6_localize_map/lib/python3.12/site-packages/6_localize_map-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[0.835849] (6_localize_map) StdoutLine: {'line': b'Copying ../../build/6_localize_map/6_localize_map.egg-info to /home/user15/colcon_ws/install/6_localize_map/lib/python3.12/site-packages/6_localize_map-0.0.0-py3.12.egg-info\n'}
+[0.836576] (6_localize_map) StdoutLine: {'line': b'running install_scripts\n'}
+[0.900785] (-) TimerEvent: {}
+[0.925165] (6_localize_map) StdoutLine: {'line': b'Installing random_moition script to /home/user15/colcon_ws/install/6_localize_map/lib/6_localize_map\n'}
+[0.925370] (6_localize_map) StdoutLine: {'line': b'Installing simple_yaw_oa script to /home/user15/colcon_ws/install/6_localize_map/lib/6_localize_map\n'}
+[0.925559] (6_localize_map) StdoutLine: {'line': b"writing list of installed files to '/home/user15/colcon_ws/build/6_localize_map/install.log'\n"}
+[0.949095] (6_localize_map) CommandEnded: {'returncode': 0}
+[0.957786] (6_localize_map) JobEnded: {'identifier': '6_localize_map', 'rc': 0}
+[0.958128] (-) EventReactorShutdown: {}

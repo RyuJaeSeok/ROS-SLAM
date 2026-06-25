@@ -1,0 +1,3 @@
+[console_scripts]
+avoid_processor = 4_avoild_obstacle.avoid_processor:main
+lidar_listener = 4_avoild_obstacle.lidar_listener:main

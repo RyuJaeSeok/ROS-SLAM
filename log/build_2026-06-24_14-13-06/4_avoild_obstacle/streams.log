@@ -1,0 +1,22 @@
+[1.516s] Invoking command in '/home/user08/colcon_ws/src/4_avoild_obstacle': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user08/colcon_ws/build/4_avoild_obstacle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user08/colcon_ws/install/4_avoild_obstacle/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/4_avoild_obstacle build --build-base /home/user08/colcon_ws/build/4_avoild_obstacle/build install --record /home/user08/colcon_ws/build/4_avoild_obstacle/install.log --single-version-externally-managed install_data
+[1.812s] running egg_info
+[1.835s] writing ../../build/4_avoild_obstacle/4_avoild_obstacle.egg-info/PKG-INFO
+[1.835s] writing dependency_links to ../../build/4_avoild_obstacle/4_avoild_obstacle.egg-info/dependency_links.txt
+[1.835s] writing entry points to ../../build/4_avoild_obstacle/4_avoild_obstacle.egg-info/entry_points.txt
+[1.836s] writing requirements to ../../build/4_avoild_obstacle/4_avoild_obstacle.egg-info/requires.txt
+[1.836s] writing top-level names to ../../build/4_avoild_obstacle/4_avoild_obstacle.egg-info/top_level.txt
+[1.880s] reading manifest file '../../build/4_avoild_obstacle/4_avoild_obstacle.egg-info/SOURCES.txt'
+[1.881s] writing manifest file '../../build/4_avoild_obstacle/4_avoild_obstacle.egg-info/SOURCES.txt'
+[1.881s] running build
+[1.881s] running build_py
+[1.881s] running install
+[1.888s] running install_lib
+[1.910s] running install_data
+[1.911s] running install_egg_info
+[1.935s] removing '/home/user08/colcon_ws/install/4_avoild_obstacle/lib/python3.12/site-packages/4_avoild_obstacle-0.0.0-py3.12.egg-info' (and everything under it)
+[1.935s] Copying ../../build/4_avoild_obstacle/4_avoild_obstacle.egg-info to /home/user08/colcon_ws/install/4_avoild_obstacle/lib/python3.12/site-packages/4_avoild_obstacle-0.0.0-py3.12.egg-info
+[1.936s] running install_scripts
+[2.074s] Installing avoid_processor script to /home/user08/colcon_ws/install/4_avoild_obstacle/lib/4_avoild_obstacle
+[2.074s] Installing lidar_listener script to /home/user08/colcon_ws/install/4_avoild_obstacle/lib/4_avoild_obstacle
+[2.074s] writing list of installed files to '/home/user08/colcon_ws/build/4_avoild_obstacle/install.log'
+[2.128s] Invoked command in '/home/user08/colcon_ws/src/4_avoild_obstacle' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/user08/colcon_ws/build/4_avoild_obstacle/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user08/colcon_ws/install/4_avoild_obstacle/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/4_avoild_obstacle build --build-base /home/user08/colcon_ws/build/4_avoild_obstacle/build install --record /home/user08/colcon_ws/build/4_avoild_obstacle/install.log --single-version-externally-managed install_data

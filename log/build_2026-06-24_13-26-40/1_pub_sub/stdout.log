@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/1_pub_sub/1_pub_sub.egg-info
+writing ../../build/1_pub_sub/1_pub_sub.egg-info/PKG-INFO
+writing dependency_links to ../../build/1_pub_sub/1_pub_sub.egg-info/dependency_links.txt
+writing requirements to ../../build/1_pub_sub/1_pub_sub.egg-info/requires.txt
+writing top-level names to ../../build/1_pub_sub/1_pub_sub.egg-info/top_level.txt
+writing manifest file '../../build/1_pub_sub/1_pub_sub.egg-info/SOURCES.txt'
+reading manifest file '../../build/1_pub_sub/1_pub_sub.egg-info/SOURCES.txt'
+writing manifest file '../../build/1_pub_sub/1_pub_sub.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/user08/colcon_ws/build/1_pub_sub/build
+creating /home/user08/colcon_ws/build/1_pub_sub/build/lib
+creating /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub
+copying 1_pub_sub/publisher.py -> /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub
+copying 1_pub_sub/subscriber.py -> /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub
+copying 1_pub_sub/__init__.py -> /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub
+copying 1_pub_sub/processor.py -> /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub
+running install
+running install_lib
+creating /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub
+copying /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub/publisher.py -> /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub
+copying /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub/subscriber.py -> /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub
+copying /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub/__init__.py -> /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub
+copying /home/user08/colcon_ws/build/1_pub_sub/build/lib/1_pub_sub/processor.py -> /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub
+byte-compiling /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub/publisher.py to publisher.cpython-312.pyc
+byte-compiling /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub/subscriber.py to subscriber.cpython-312.pyc
+byte-compiling /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/user08/colcon_ws/install/1_pub_sub/lib/python3.12/site-packages/1_pub_sub/processor.py to processor.cpython-312.pyc
+running install_data
+creating /home/user08/colcon_ws/install/1_pub_sub/share/ament_index
+creating /home/user08/colcon_ws/install/1_pub_sub/share/ament_index/resource_index
+creating /home/user08/colcon_ws/install/1_pub_sub/share/ament_index/resource_index/packages
+copying resource/1_pub_sub -> /home/user08/colcon_ws/install/1_pub_sub/share/ament_index/resource_index/packages
+copying package.xml -> /home/user08/colcon_ws/install/1_pub_sub/share/1_pub_sub
