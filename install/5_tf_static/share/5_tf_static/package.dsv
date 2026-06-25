@@ -1,6 +1,0 @@
-source;share/5_tf_static/hook/pythonpath.ps1
-source;share/5_tf_static/hook/pythonpath.dsv
-source;share/5_tf_static/hook/pythonpath.sh
-source;share/5_tf_static/hook/ament_prefix_path.ps1
-source;share/5_tf_static/hook/ament_prefix_path.dsv
-source;share/5_tf_static/hook/ament_prefix_path.sh

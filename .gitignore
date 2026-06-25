@@ -1,1 +1,23 @@
+# ROS2 colcon build outputs
+build/
+install/
 log/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Python packaging
+*.egg-info/
+.eggs/
+
+# editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo

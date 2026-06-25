@@ -1,4 +1,0 @@
-[console_scripts]
-processor = 1_pub_sub.processor:main
-publisher = 1_pub_sub.publisher:main
-subscriber = 1_pub_sub.subscriber:main

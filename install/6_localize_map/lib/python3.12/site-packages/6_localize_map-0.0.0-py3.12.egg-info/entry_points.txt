@@ -1,4 +1,0 @@
-[console_scripts]
-initial_pose_pub = 6_localize_map.initial_pose_pub:main
-random_moition = 6_localize_map.random_moition:main
-simple_yaw_oa = 6_localize_map.simple_yaw_oa:main

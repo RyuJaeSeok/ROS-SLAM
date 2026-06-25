@@ -25,12 +25,9 @@ def generate_launch_description():
     map_yaml = os.path.join(package_share, 'map', 'custom_world.yaml')
     burger_model = os.path.join(package_share, 'models', 'turtlebot3_burger', 'model.sdf')
     ekf_config = os.path.join(package_share, 'config', 'ekf.yaml')
+    nav2_params = os.path.join(package_share, 'config', 'nav2_params.yaml')
     rviz_default_config = os.path.join(package_share, 'config', 'custom_nav2.rviz')
-    burger_bridge = os.path.join(
-        turtlebot3_share,
-        'params',
-        'turtlebot3_burger_bridge.yaml',
-    )
+    burger_bridge = os.path.join(package_share, 'config', 'burger_bridge.yaml')
 
     model = LaunchConfiguration('model')
     use_sim_time = LaunchConfiguration('use_sim_time')
@@ -103,6 +100,7 @@ def generate_launch_description():
             'map': map_yaml,
             'use_sim_time': use_sim_time,
             'autostart': autostart,
+            'params_file': nav2_params,
         }.items(),
         condition=IfCondition(use_nav2),
     )
@@ -145,7 +143,7 @@ def generate_launch_description():
         DeclareLaunchArgument('use_sim_time', default_value='true'),
         DeclareLaunchArgument('use_nav2', default_value='true'),
         DeclareLaunchArgument('use_rviz', default_value='true'),
-        DeclareLaunchArgument('use_ekf', default_value='true'),
+        DeclareLaunchArgument('use_ekf', default_value='false'),
         DeclareLaunchArgument('set_initial_pose', default_value='true'),
         DeclareLaunchArgument(
             'rviz_config',

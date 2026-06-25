@@ -396,6 +396,7 @@
       <child_frame_id>base_footprint</child_frame_id>
       <odom_publisher_frequency>30</odom_publisher_frequency>
 
+      <!-- <publish_odom_tf>false</publish_odom_tf>  -->
       <tf_topic>/tf</tf_topic>
 
     </plugin>

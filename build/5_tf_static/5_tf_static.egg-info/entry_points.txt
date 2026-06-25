@@ -1,4 +1,0 @@
-[console_scripts]
-tf_dynamic = 5_tf_static.tf_dynamic:main
-tf_listener = 5_tf_static.tf_listener:main
-tf_static = 5_tf_static.tf_static:main
